@@ -1,170 +1,297 @@
-<head> 
-    <!-- Enlace al archivo CSS externo para los estilos -->
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SONAR - Tu Portal de Musica</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <!-- Cuerpo del documento: contiene todo el contenido visible -->
-    <!-- HEADER: Cabecera principal del sitio -->
-    <header id="top">
-        <!-- Contenedor del contenido del header -->
-        <div class="header-content">
-            <!-- Imagen de perfil del autor del portafolio -->
-            <img src="imagen.png" alt="Foto de Daniel Rodriguez" class="profile-photo">
-            <!-- Contenedor del texto del header -->
-            <div class="header-text">
-                <!-- Titulo principal h1: nombre del autor -->
-                <h1>Daniel Rodriguez</h1>
-                <!-- Subtitulo con la carrera y universidad -->
-                <p class="subtitle">Estudiante de Ingeniería en Sistemas | UIDE</p>
-                <!-- Ubicacion del autor -->
-                <p class="location">Quito, Ecuador</p>
+
+    <!-- Seccion de Inicio -->
+    <section id="inicio" class="seccion-inicio">
+        <div class="inicio-contenido">
+            <div class="inicio-logo">
+                <span class="inicio-icono">&#9835;</span>
+                <h1>SONAR</h1>
             </div>
+            <p class="inicio-descripcion">Tu portal de musica favorito. Descubre y escucha las mejores canciones de tus artistas preferidos.</p>
+            <a href="#menu" class="boton-comenzar">Comenzar a Escuchar</a>
         </div>
-    </header>
-    <!-- MAIN: Contenido principal del sitio -->
-    <main>
-        <!-- SECCION: Sobre Mi -->
-        <!-- La etiqueta section agrupa contenido tematico -->
-        <section id="sobre-mi">
-            <!-- Titulo de nivel 2 para la seccion -->
-            <h2>Sobre Mi</h2>
-            <!-- Parrafo con etiquetas de formato de texto -->
-            <p>Mi nombre es Daniel Rodriguez, soy estudiante de cuarto semestre de la carrera de Ingeniería en Sistemas en la UIDE y vivo en Quito, Ecuador. Actualmente me encuentro en una etapa de formacion academica donde estoy desarrollando conocimientos fundamentales en tecnologia, programacion y bases de datos.</p>
-            <p>Me considero una persona curiosa, responsable y con muchas ganas de aprender. Siempre busco mejorar mis habilidades y adquirir nuevos conocimientos que me permitan crecer tanto en el ambito personal como profesional.</p>
-            <p>Despues de mis clases en la universidad, generalmente regreso a casa donde dedico tiempo a realizar mis deberes, estudiar y reforzar lo aprendido. Tambien aprovecho mi tiempo libre para investigar temas de tecnologia o descansar. Valoro mucho el tiempo con mi familia, ya que somos un grupo unido conformado por mis padres y mi hermana.</p>
-        </section>
-        <!-- Linea horizontal para separar secciones -->
-        <hr>
-        <!-- SECCION: Formacion Academica -->
-        <section id="formacion">
-            <h2>Formacion Academica</h2>
-            <p>Actualmente estudio Sistemas, una carrera que me permite comprender como funcionan las tecnologias que utilizamos diariamente. Estoy aprendiendo temas como:</p>
-            <!-- Lista no ordenada (ul): muestra elementos con vinetas -->
-            <!-- Cada elemento se define con la etiqueta li -->
-            <ul>
-                <li>Programacion basica</li>
-                <li>Desarrollo de paginas web con HTML y CSS</li>
-                <li>Introduccion a bases de datos</li>
-                <!-- em dentro de li: texto con enfasis -->
-                <li>Seguridad informatica <em>(conceptos basicos)</em></li>
-            </ul>
-            <p>Mi objetivo es fortalecer estas bases para en el futuro especializarme en areas mas avanzadas de la tecnologia.</p>
-        </section>
-        <hr>
-        <!-- SECCION: Intereses y Habilidades -->
-        <section id="habilidades">
-            <h2>Intereses y Habilidades</h2>
-            <p>Desde pequeno he tenido interes por la tecnologia, lo que me ha llevado a explorar diferentes herramientas digitales y aprender de forma autonoma.</p>
-            <!-- Subtitulo 3 -->
-            <h3>Intereses Principales</h3>
-            <!-- Lista no ordenada con formatos de texto -->
-            <ul>
-                <li>La programacion y desarrollo de software</li>
-                <li>La creacion de <em>paginas web</em></li>
-                <li>La seguridad informatica</li>
-                <li>El aprendizaje continuo en tecnologia</li>
-            </ul>
-            <p>Ademas, disfruto mucho del futbol y de compartir con otras personas, lo que me ha ayudado a desarrollar habilidades sociales importantes como la comunicacion y el trabajo en equipo.</p>
-            <h3>Tecnologias que Estoy Aprendiendo</h3>
-            <!-- Lista no ordenada con listas anidadas -->
-            <!-- Las listas anidadas se crean colocando ul dentro de li -->
-            <ul>
-                <li>HTML5
-                    <!-- Lista anidada dentro del elemento HTML5 -->
-                    <ul>
-                        <li>Estructura semantica</li>
-                        <li>Etiquetas de formato</li>
-                        <li>Listas y enlaces</li>
-                    </ul>
-                </li>
-                <li>CSS3
-                    <!-- Lista anidada dentro del elemento CSS3 -->
-                    <ul>
-                        <li>Estilos basicos</li>
-                        <li>Diseno responsivo</li>
-                    </ul>
-                </li>
-                <li>Python
-                    <!-- Lista anidada dentro del elemento Python -->
-                    <ul>
-                        <li>Sintaxis basica</li>
-                        <li>Desarrollo de juegos</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <hr>
-        <!-- SECCION: Proyectos y Experiencia -->
-        <section id="proyectos">
-            <h2>Proyectos y Experiencia</h2>
-            <p>Aunque me encuentro en una etapa inicial de mi formacion, ya he comenzado a desarrollar pequenos proyectos academicos:</p>
-            <h3>Paginas Web Basicas</h3>
-            <p>Creacion de paginas web utilizando HTML y CSS para practicar los conceptos aprendidos en clase.</p>
-            <h3>Ejercicios de Programacion</h3>
-            <p>Desarrollo de ejercicios practicos para reforzar conceptos de <em>logica de programacion</em> y algoritmos basicos.</p>
-            <h3>Juego Pong en Python</h3>
-            <p>Desarrollo de un juego tipo Pong utilizando Python para aplicar conceptos de programacion.</p>
-            <p>Estos proyectos me han permitido poner en practica lo aprendido y entender mejor como funciona el desarrollo de software.</p>
-        </section>
-        <hr>
-        <!-- SECCION: Objetivos -->
-        <section id="objetivos">
-            <h2>Objetivos</h2>
-            <p>Mis metas a corto y largo plazo son:</p>
-            <h3>Objetivos a Corto Plazo</h3>
-            <!-- Lista ordenada (ol): muestra elementos numerados -->
-            <ol>
-                <li>Continuar aprendiendo y mejorando mis habilidades tecnologicas</li>
-                <li>Completar satisfactoriamente el cuarto semestre de la carrera</li>
-                <li>Dominar los fundamentos de HTML y CSS</li>
-            </ol>
-            <h3>Objetivos a Largo Plazo</h3>
-            <!-- Otra lista ordenada para objetivos a largo plazo -->
-            <ol>
-                <li>Desarrollar proyectos mas complejos</li>
-                <li>Adquirir experiencia en el area de sistemas</li>
-                <li>Convertirme en un profesional competente en el mundo de la tecnologia</li>
-                <li>Especializarme en desarrollo de software o seguridad informatica</li>
-            </ol>
-        </section>
-        <hr>
-        <!-- SECCION: Contacto -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Soy un estudiante comprometido con mi formacion, con una gran motivacion por aprender y crecer en el area tecnologica. Estoy en constante busqueda de nuevos conocimientos y oportunidades que me permitan desarrollar mi potencial y construir un futuro profesional solido.</p>
-            <!-- Etiqueta address: contiene informacion de contacto -->
-            <address>
-                <p>Daniel Rodriguez</p>
-                <p>Estudiante de Ingeniería en Sistemas - UIDE</p>
-                <p>Quito, Ecuador</p>
-                <!-- Enlace mailto: abre el cliente de correo electronico -->
-                <p>Correo electronico: <a href="darodriguezag@uide.edu.ec">darodriguezag@uide.edu.ec</a></p>
-                <!-- Enlace tel: permite llamar desde dispositivos moviles -->
-                <p>Telefono: <a href="tel:+0986483440">+0986483440</a></p>
-            </address>
-            
-            <h3>Redes Profesionales</h3>
-            
-            <ul>
-                <!-- Enlace externo con target="_blank" para abrir en nueva pestana -->
-                <li><a href="https://www.linkedin.com/in/daniel-rodriguez-5a27aa376/" target="_blank">LinkedIn</a> - Perfil profesional</li>
-            </ul>
-            
-            <h3>Sitios de Inspiracion</h3>
-            
-            <p>Algunos portafolios que me sirven de inspiracion:</p>
-            
-            <!-- Lista de enlaces externos -->
-            <ul>
-                <li><a href="https://www.eugeniomorocho.com/" target="_blank">Eugenio Morocho</a></li>
-                <li><a href="https://porfolio.dev/" target="_blank">Porfolio.dev</a></li>
-                <li><a href="https://mouredev.com/brais-moure/" target="_blank">Brais Moure</a></li>
-            </ul>
-        </section>
+    </section>
+
+    <!-- Menu Principal -->
+    <main id="menu" class="contenedor-principal">
+        <header class="encabezado">
+            <a href="#inicio" class="enlace-inicio">Ir al Inicio</a>
+            <div class="logo">
+                <span class="logo-icono">&#9835;</span>
+                <span class="logo-texto">SONAR</span>
+            </div>
+            <p class="eslogan">Tu portal de musica favorito</p>
+        </header>
+
+        <h2 class="titulo">Selecciona un Artista</h2>
+
+        <div class="cuadricula-tarjetas">
+            <!-- Bad Bunny -->
+            <a href="#badbunny" class="tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="imagenes/bad-bunny.png" alt="Bad Bunny">
+                </div>
+                <div class="tarjeta-contenido">
+                    <h3>Bad Bunny</h3>
+                    <p>Reggaeton / Latino</p>
+                    <span class="cantidad-canciones">4 canciones</span>
+                </div>
+            </a>
+
+            <!-- Nicky Jam -->
+            <a href="#nickyjam" class="tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="imagenes/nicky-jam.png" alt="Nicky Jam">
+                </div>
+                <div class="tarjeta-contenido">
+                    <h3>Nicky Jam</h3>
+                    <p>Reggaeton / Urbano</p>
+                    <span class="cantidad-canciones">1 cancion</span>
+                </div>
+            </a>
+
+            <!-- Billie Eilish -->
+            <a href="#billieeilish" class="tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="imagenes/billie-eilish.png" alt="Billie Eilish">
+                </div>
+                <div class="tarjeta-contenido">
+                    <h3>Billie Eilish</h3>
+                    <p>Pop / Alternativo</p>
+                    <span class="cantidad-canciones">4 canciones</span>
+                </div>
+            </a>
+
+            <!-- Shakira -->
+            <a href="#shakira" class="tarjeta">
+                <div class="tarjeta-imagen">
+                    <img src="imagenes/shakira.png" alt="Shakira">
+                </div>
+                <div class="tarjeta-contenido">
+                    <h3>Shakira</h3>
+                    <p>Pop Latino / Dance</p>
+                    <span class="cantidad-canciones">3 canciones</span>
+                </div>
+            </a>
+        </div>
+
+        <footer class="pie-pagina">
+            <a href="#inicio" class="enlace-pie">Volver al Inicio</a>
+            <p>SONAR 2024 - Todos los derechos reservados</p>
+        </footer>
     </main>
-    <!-- FOOTER: Pie de pagina del sitio web -->
-    <footer>
-        <p> 2026 Daniel Rodriguez Aguirre Alejandro.</p>
-    </footer>
+
+    <!-- Modal Bad Bunny -->
+    <section id="badbunny" class="modal-artista">
+        <div class="modal-fondo"></div>
+        <div class="modal-contenido">
+            <a href="#menu" class="boton-cerrar">&#10005;</a>
+            <div class="modal-cabecera">
+                <img src="imagenes/bad-bunny.png" alt="Bad Bunny" class="modal-imagen">
+                <div class="modal-info">
+                    <h2>Bad Bunny</h2>
+                    <p>Reggaeton / Latino</p>
+                </div>
+            </div>
+            <div class="lista-canciones">
+                <div class="cancion-item">
+                    <span class="numero-cancion">01</span>
+                    <div class="info-cancion">
+                        <h4>Titi Me Pregunto</h4>
+                        <p>Un Verano Sin Ti</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/bad-bunny-titi-me-pregunto.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="cancion-item">
+                    <span class="numero-cancion">02</span>
+                    <div class="info-cancion">
+                        <h4>Me Porto Bonito</h4>
+                        <p>ft. Chencho Corleone - Un Verano Sin Ti</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/bad-bunny-me-porto-bonito.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="cancion-item">
+                    <span class="numero-cancion">03</span>
+                    <div class="info-cancion">
+                        <h4>Callaita</h4>
+                        <p>Single</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/bad-bunny-callaita.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="cancion-item">
+                    <span class="numero-cancion">04</span>
+                    <div class="info-cancion">
+                        <h4>Dakiti</h4>
+                        <p>ft. Jhay Cortez</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/bad-bunny-dakiti.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+            <a href="#menu" class="boton-regresar">Regresar al Menu Principal</a>
+        </div>
+    </section>
+
+    <!-- Modal Nicky Jam -->
+    <section id="nickyjam" class="modal-artista">
+        <div class="modal-fondo"></div>
+        <div class="modal-contenido">
+            <a href="#menu" class="boton-cerrar">&#10005;</a>
+            <div class="modal-cabecera">
+                <img src="imagenes/nicky-jam.png" alt="Nicky Jam" class="modal-imagen">
+                <div class="modal-info">
+                    <h2>Nicky Jam</h2>
+                    <p>Reggaeton / Urbano</p>
+                </div>
+            </div>
+            <div class="lista-canciones">
+                <div class="cancion-item">
+                    <span class="numero-cancion">01</span>
+                    <div class="info-cancion">
+                        <h4>X (Equis)</h4>
+                        <p>ft. J Balvin</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/nicky-jam-equis.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+            <a href="#menu" class="boton-regresar">Regresar al Menu Principal</a>
+        </div>
+    </section>
+
+    <!-- Modal Billie Eilish -->
+    <section id="billieeilish" class="modal-artista">
+        <div class="modal-fondo"></div>
+        <div class="modal-contenido">
+            <a href="#menu" class="boton-cerrar">&#10005;</a>
+            <div class="modal-cabecera">
+                <img src="imagenes/billie-eilish.png" alt="Billie Eilish" class="modal-imagen">
+                <div class="modal-info">
+                    <h2>Billie Eilish</h2>
+                    <p>Pop / Alternativo</p>
+                </div>
+            </div>
+            <div class="lista-canciones">
+                <div class="cancion-item">
+                    <span class="numero-cancion">01</span>
+                    <div class="info-cancion">
+                        <h4>Bad Guy</h4>
+                        <p>When We All Fall Asleep, Where Do We Go?</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/billie-eilish-bad-guy.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="cancion-item">
+                    <span class="numero-cancion">02</span>
+                    <div class="info-cancion">
+                        <h4>Everything I Wanted</h4>
+                        <p>Single</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/billie-eilish-everything-i-wanted.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="cancion-item">
+                    <span class="numero-cancion">03</span>
+                    <div class="info-cancion">
+                        <h4>Lovely</h4>
+                        <p>ft. Khalid</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/billie-eilish-lovely.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="cancion-item">
+                    <span class="numero-cancion">04</span>
+                    <div class="info-cancion">
+                        <h4>Ocean Eyes</h4>
+                        <p>Dont Smile at Me</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/billie-eilish-ocean-eyes.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+            <a href="#menu" class="boton-regresar">Regresar al Menu Principal</a>
+        </div>
+    </section>
+
+    <!-- Modal Shakira -->
+    <section id="shakira" class="modal-artista">
+        <div class="modal-fondo"></div>
+        <div class="modal-contenido">
+            <a href="#menu" class="boton-cerrar">&#10005;</a>
+            <div class="modal-cabecera">
+                <img src="imagenes/shakira.png" alt="Shakira" class="modal-imagen">
+                <div class="modal-info">
+                    <h2>Shakira</h2>
+                    <p>Pop Latino / Dance</p>
+                </div>
+            </div>
+            <div class="lista-canciones">
+                <div class="cancion-item">
+                    <span class="numero-cancion">01</span>
+                    <div class="info-cancion">
+                        <h4>Waka Waka (Esto es Africa)</h4>
+                        <p>Cancion Oficial Copa Mundial FIFA 2010</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/shakira-waka-waka.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="cancion-item">
+                    <span class="numero-cancion">02</span>
+                    <div class="info-cancion">
+                        <h4>Hips Dont Lie</h4>
+                        <p>ft. Wyclef Jean</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/shakira-hips-dont-lie.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="cancion-item">
+                    <span class="numero-cancion">03</span>
+                    <div class="info-cancion">
+                        <h4>Chantaje</h4>
+                        <p>ft. Maluma</p>
+                    </div>
+                    <audio controls>
+                        <source src="audios/shakira-chantaje.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+            </div>
+            <a href="#menu" class="boton-regresar">Regresar al Menu Principal</a>
+        </div>
+    </section>
+
 </body>
 </html>
